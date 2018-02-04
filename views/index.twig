@@ -1,0 +1,10 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+    <h1>{{ title }}</h1>
+    <label for="number">Entrez un nombre de 0 à 100</label>
+    <input id="number" name="number" type="number" min="0" max="100" value="0">
+    <button id="convert">Convertir</button>
+    <p>Resultat : <span id="result"></span></p>
+    <script type="text/javascript" src="/javascripts/index.js"></script>
+{% endblock %}
